@@ -1,0 +1,113 @@
+
+.wrap {
+  background-color: #f0f0f0;
+}
+
+/*mainbody*/
+.mainbody p {
+  text-align: center;
+}
+.mainbody > div {
+  width: 88.75%;
+
+  color: #9a9a9a;
+  background-color: #fff;
+  box-shadow: 0 0 1px #e6e6e6;
+}
+.last-game {
+  position: relative;
+  top: 3.373016%;
+
+  height: 11.507937%;
+  padding: 4%;
+
+  color: #9a9a9a;
+  background-color: #fff;
+  font-size: 1.742rem;
+}
+.games {
+  position: relative;
+  top: 5.753968%;
+
+  height: 76.984127%;
+
+  overflow: hidden;
+}
+/*gamepage*/
+.gamepage {
+  position: absolute;
+  left: 100%;
+
+  width: 100%;
+  height: 100%;
+}
+.first {
+  left: 0;
+}
+/*transition button*/
+.nextbtn {
+  display: inline-block;
+  position: absolute;
+  right: 3%;
+  top: 46%;
+
+  border-left: 28px solid #fbb435;
+  border-top: 27px solid #fff;
+  border-bottom: 27px solid #fff;
+}
+.prevbtn {
+  display: inline-block;
+  position: absolute;
+  left: 3%;
+  top: 46%;
+
+  border-right: 28px solid #fbb435;
+  border-top: 27px solid #fff;
+  border-bottom: 27px solid #fff;
+}
+@media (max-width: 500px) {
+  .nextbtn {
+    border-left: 14px solid #fbb435;
+    border-top: 13px solid #fff;
+    border-bottom: 13px solid #fff;
+  }
+  .prevbtn {
+    border-right: 14px solid #fbb435;
+    border-top: 13px solid #fff;
+    border-bottom: 13px solid #fff;
+  }
+}
+/*title*/
+.title {
+  height: 11.21134%;
+  border-bottom: 1px solid #fdd793;
+  padding: 2%;
+
+  font-size: 1.887rem;
+  color: #fbb435;
+  text-align: center;
+}
+/*version*/
+.version {
+  height: 88.78866%;
+  border-top: 1px solid #fde1ae;
+}
+.version-block {
+  width: 81.338028%;
+  height: 19.448476%;
+  margin-top: 4.401408%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 7%;
+  border: 1px solid #a7e4f2;
+
+  text-align: center;
+  background-color: #69d1e9;
+  color: #fff;
+  font-size: 1.604rem;
+  cursor: pointer;
+}
+.version p {
+  margin-bottom: 0;
+  font-size: 1.2265rem;
+}

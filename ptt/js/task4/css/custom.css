@@ -1,0 +1,157 @@
+html {
+  height: 100%;
+
+  font-size: 20px;
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
+}
+body {
+  height: 100%;
+
+  font-family: "HiraginoSansGB W6", "Microsoft YaHei";
+  font-size:14px;
+}
+/*lengqidong*/
+.lqd {
+  display: block;
+  width: 66.71875%;
+  margin: 29.0625% auto 14.0625%;
+}
+.lqd ~ p {
+  font-size: 2rem;
+  font-weight: 600;
+
+  color: #fff;
+  text-align: center;
+}
+/*wrap*/
+.wrap {
+  max-width: 640px;
+  width: 100%;
+  height: 100%;
+
+  background-color: #29bde0;
+}
+.wrap > div {
+  height: 100%;
+}
+/*header*/
+header {
+  height: 7.774648%;
+
+  background-color: #29bde0;
+}
+header p {
+  display: block;
+  padding-top: 2%;
+  font-size: 1.7rem;
+
+  color: #fff;
+  text-align: center;
+}
+/*header ico*/
+header > div {
+  width: 10.9375%;
+  height: 100%;
+
+  cursor: pointer;
+}
+.menuico {
+  float: left;
+
+  background: url("../img/menu.png") no-repeat center center;
+  background-size: 48.571429%;
+}
+.backico {
+  float: left;
+
+  background: url("../img/back.png") no-repeat center center;
+  background-size: 35.714286%;
+}
+.backtojudge {
+  float: left;
+
+  background: url("../img/backtojudge.png") no-repeat center center;
+  background-size: 55.714286%;
+}
+.homeico {
+  float: left;
+
+  background: url("../img/home.png") no-repeat center center;
+  background-size: 72.857143%;
+}
+.helpico {
+  float: right;
+
+  background: url("../img/help.png") no-repeat center center;
+  background-size: 67.142857%;
+}
+.closeico {
+  float: right;
+
+  background: url("../img/close.png") no-repeat center center;
+  background-size: 51.428571%;
+}
+.moreico {
+  float: right;
+
+  background: url("../img/more.png") no-repeat center center;
+  background-size: 57.142857%;
+}
+
+/*mainbody*/
+.mainbody {
+  height: 92.253521%;
+}
+/*button*/
+.cusbtn {
+  height: 8.730159%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0;
+
+  background-color: #fbb435;
+  color: #fff;
+  font-size: 2rem;
+}
+
+@media (max-width: 500px) {
+  .mainbody {
+    height: 90%;
+  }
+  header {
+    height: 44px;
+  }
+}
+
+.idcontent {
+  overflow-y: auto;
+}
+/*id*/
+.idcard {
+  position: relative;
+  float: left;
+  width: 19.6875%;
+  border: 5px solid #fff;
+  margin-left: 10.5%;
+  margin-right: 0.8%;
+  margin-top: 10%;
+
+  text-align: center;
+  cursor: pointer;
+}
+.idcard-id {
+  padding-top: 15%;
+  padding-bottom: 15%;
+
+  font-size: 1.5rem;
+  background-color: #f5c97b;
+}
+.idcard-num {
+  font-size: 1.138rem;
+  background-color: #83b09a;
+  color: #fff;
+}

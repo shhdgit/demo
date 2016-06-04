@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Microsoft YaHei";
+  cursor: default;
+}
+body {
+
+  max-width: 1920px;
+  width: 100%;
+}
+p {
+  color: #999;
+}
+/*main*/
+.clear {
+  clear: both;
+}
+.wrap {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+/*header*/
+.header {
+  background-color: #fff;
+}
+.header p {
+  display: inline-block;
+
+  padding: 11.5px 0;
+
+  color: #42b683;
+}
+.header-1 {
+  position: relative;
+}
+.header-1 .wrap div {
+  float: right;
+
+  margin-top: 7px;
+}
+.header-1 span {
+  display: inline-block;
+  width: 25px;
+  height: 24px;
+
+  margin-left: 12.5px;
+
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -330px 0;
+  cursor: pointer;
+}
+#ico-qq {
+  background-position: -355px 0;
+}
+#ico-wb {
+  background-position: -380px 0;
+}
+.header-2 {
+  background-color: #29b078;
+  color: #FFF;
+  font-size: 1.6rem;
+}
+.logo {
+  float: left;
+
+  padding: 26.5px 56px;
+  margin-top: 25px;
+
+  background: url("../img/sprite.png") no-repeat -92px 0;
+}
+.header-2 ul {
+  float: right;
+
+  list-style: none;
+}
+#header-index {
+  padding-bottom: 34px;
+
+  border-bottom: 5px solid;
+}
+.header-2 ul li {
+  display: inline-block;
+  padding: 39px 27.5px;
+
+  cursor: pointer;
+}
+.header-2 ul li:hover {
+  padding-bottom: 34px;
+
+  border-bottom: 5px solid;
+  -webkit-transition: 0.1s linear;
+     -moz-transition: 0.1s linear;
+          transition: 0.1s linear;
+}
+
+/*container*/
+.container {
+  background-color: #fafafa;
+}
+.container > img {
+  width: 100%;
+}
+.container ul {
+  font-size: 1.6rem;
+}
+.container li {
+  display: inline-block;
+
+  margin: 30px 0;
+
+  color: #29b078;
+  cursor: pointer;
+}
+.container .wrap > div {
+  float: left;
+
+  margin-bottom: 19.1667%;
+
+  background-color: #fff;
+  box-shadow: 0 0 3px 1px #e2e2e2;
+  border-radius: 2px;
+}
+/*leftbar*/
+.leftbar {
+  width: 25.3333%;
+  margin-right: 2.1667%;
+  margin-left: 10px;
+
+  text-align: center;
+}
+.leftbar h1 {
+  display: block;
+
+  padding: 5.9211% 0;
+
+  border-bottom: 1px solid #e6e6e6;
+}
+.leftbar li {
+  margin: 11.8421% 0 11.8421% 42.7632%;
+
+  display: list-item;
+  list-style: url("../img/ico_05.png");
+  text-align: left;
+  cursor: pointer;
+}
+.leftbar li:hover, #now {
+  list-style: url("../img/ico_06.png");
+  color: #ff650e;
+}
+/*content*/
+.content {
+  width: 70%;
+  padding-bottom: 18.398%;
+
+  font-size: 1.4rem;
+  line-height: 25px;
+}
+.content-brief {
+  border-bottom: 1px solid #e6e6e6;
+}
+.content-brief img {
+  width: 14.4828%;
+  padding-top: 6.8966%;
+  padding-left: 9.6552%;
+}
+.content-brief p {
+  float: right;
+
+  width: 64.3678%;
+  margin: 2.9885% 7.1264% 2.7586% 0;
+}
+.content > p {
+  margin: 4.5977% auto;
+  /*margin-top: 4.5977%;*/
+  width: 85.0575%;
+}
+
+/*footer*/
+.footer-wrap {
+  background-color: #26a26f;
+}
+.footer-wrap p {
+  color: #fff;
+}
+.footer {
+  margin: 0 auto;
+
+  max-width: 1200px;
+  width: 100%;
+
+  color: #fff;
+  font-size: 1.4rem;
+}
+.footer div {
+  float: left;
+  margin-top: 38px;
+}
+.footer p {
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+.footer span {
+  display: block;
+  margin-top: 58px;
+}
+.footer ul {
+  width: 245px;
+
+  list-style: none;
+}
+.webs {
+  margin-left: 150px;
+}
+#weixinpt {
+  float: right;
+
+  margin-right: 30px;
+  margin-bottom: 18px;
+}
+#weixinpt div {
+  padding: 46px;
+  margin-top: 0;
+
+  background: url("../img/sprite.png") no-repeat;
+}
+.footer li {
+  display: inline-block;
+  margin: 18px 36px 0 0;
+
+  border-bottom: 1px solid #26a26f;
+  cursor: pointer;
+}
+.footer li:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.footer-wrap > p {
+  text-align: center;
+
+  line-height: 30px;
+
+  border-top: 1px solid #32c086;
+}

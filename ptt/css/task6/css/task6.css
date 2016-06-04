@@ -1,0 +1,172 @@
+* {
+	margin: 0;
+	padding-top: 0;
+}
+html {
+	font-size: 62.5%;
+	font-family: "Microsoft YaHei";
+}
+.wrap {
+	max-width: 640px;
+	width: 100%;
+
+	margin: 0 auto;
+
+	background: #29BDE0;
+}
+
+/*header*/
+.header {
+	position: relative;
+}
+.header p {
+	padding: 2.734375% 0;
+
+	font-size: 3.4rem;
+	color: #FFF;
+	text-align: center;
+}
+#menu {
+	width: 6.09375%;
+
+	float: left;
+	margin: 3.125% 0 0 3.125%;
+}
+#close {
+	width: 5.625%;
+
+	float: right;
+	margin: 3.125% 3.125% 0 0;
+}
+
+/*container*/
+.musicbar {
+	background: #B9E9F5;
+}
+.musicbar img {
+	width: 8.125%;
+
+	float: right;
+	margin: 2.34375% 2.5% 0 0;
+	cursor: pointer;
+}
+.musicbar p {
+	padding: 3.671875% 0;
+
+	margin-left: 9.375%;
+
+	font-size: 2.6rem;
+	color: #4D5051;
+}
+.content p {
+	font-size: 2.4rem;
+	padding: 5% 0 0 10%;
+
+	color: #FFF;
+}
+/*main task*/
+.occupation {
+	float: left;
+	width: 21.25%;
+
+	margin: 0 4.6875% 0 6.7%;
+}
+.occupation div {
+	margin: 15.4412% 0;
+
+	border: 5px solid #FFF;
+	cursor: pointer;
+}
+.occupation p {
+	display: block;
+	width: 100%;
+	padding: 20% 0;
+
+	text-align: center;
+	color: #565656;
+	font-size: 3rem;
+	background-color: #F5C97B;
+}
+.occupation p ~ p {
+	padding: 0;
+
+	color: #FFF;
+	font-size: 2.3rem;
+	background-color: #83B09A;
+}
+.occupation span {
+	display: inline-block;
+	width: 22.059%;
+	padding: 11.0294% 0;
+
+	margin-left: 1px;
+
+	background: url("../img/sprit.png") no-repeat #FFF;
+	background-size: 400%;
+	opacity: 0;
+}
+.occupation div:hover ~ span {
+	opacity: 1;
+}
+
+.occupation .cop {
+	background-position: 33% 0;
+}
+.occupation .sniper {
+	background-position: 66% 0;
+}
+.occupation .doctor {
+	background-position: 100% 0;
+}
+
+.blank_footer {
+	width: 100%;
+	padding: 18% 0;
+
+	clear: both;
+}
+
+
+/*footer*/
+.footer {
+	max-width: 640px;
+	width: 100%;
+	height: 17.5926%;
+
+	position: fixed;
+	bottom: 0;
+	background-color: #29BDE0;
+	font-size: 4rem;
+	color: #FFF;
+}
+.shadowbox {
+	width: 85.9375%;
+
+	margin-left: 7.03125%;
+
+	border-top: 1px solid #FFF;
+}
+.shadowbox p {
+	display: block;
+	width: 89.09%;
+	padding: 2.65625% 0;
+
+	margin: 7.6364% 0 0 5.455%;
+
+	background-color: #FBB435;
+	text-align: center;
+}
+
+@media (max-width: 800px){
+
+}
+@media (max-width: 600px){
+	html {
+		font-size: 40%;
+	}
+	.occupation {
+		width: 25%;
+
+		margin: 0 2% 0 5%;
+	}
+}

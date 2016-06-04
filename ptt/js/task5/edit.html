@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+  <title>编辑页</title>
+  <meta charset="utf-8" />
+  <link href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/jst5.css" rel="stylesheet" />
+  <link href="css/signup.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 main">
+        <span class="title">编辑</span>
+        <form action="#" method="post" class="content-margin sign-form" id="myForm">
+          <div>
+            <span>姓名：</span><input name="name" type="text" />
+          </div>
+          <div>
+            <span>QQ：</span><input name="qq" type="text" />
+          </div>
+          <div class="sign-radio">
+            <span>修真类型：</span>
+            <div>
+              <input id="type0" name="type" type="radio" value="0" /><label for="type0">CSS</lable>
+            </div>
+            <div>
+              <input id="type1" name="type" type="radio" value="1" /><label for="type1">JS</lable>
+            </div>
+            <div>
+              <input id="type2" name="type" type="radio" value="2" /><label for="type2">JAVA</lable>
+            </div>
+            <div>
+              <input id="type3" name="type" type="radio" value="3" /><label for="type3">运维</lable>
+            </div>
+            <div>
+              <input id="type4" name="type" type="radio" value="4" /><label for="type4">DBA</lable>
+            </div>
+            <div>
+              <input id="type5" name="type" type="radio" value="5" /><label for="type5">产品</lable>
+            </div>
+            <div>
+              <input id="type6" name="type" type="radio" value="6" /><label for="type6">IOS</lable>
+            </div>
+            <div>
+              <input id="type7" name="type" type="radio" value="7" /><label for="type7">ANDROID</lable>
+            </div>
+          </div>
+          <div>
+            <span>毕业院校：</span><input class="text-length" name="school" type="text" />
+          </div>
+          <div class="sign-radio">
+            <span>资质：</span>
+            <div>
+              <input id="talent0" name="talent" type="radio" /><label for="talent0">学霸</lable>
+            </div>
+            <div>
+              <input id="talent1" name="talent" type="radio" /><label for="talent1">学渣</lable>
+            </div>
+          </div>
+          <div class="sign-radio">
+            <span>修行等级：</span>
+            <div>
+              <input id="level0" name="level" type="radio" /><label for="level0">0基础</lable>
+            </div>
+            <div>
+              <input id="level1" name="level" type="radio" /><label for="level1">修行3个月以内</lable>
+            </div>
+            <div>
+              <input id="level2" name="level" type="radio" /><label for="level2">修行6个月以内</lable>
+            </div>
+            <div>
+              <input id="level3" name="level" type="radio" /><label for="level3">修行1年以内</lable>
+            </div>
+            <div>
+              <input id="level4" name="level" type="radio" /><label for="level4">修行3年以内</lable>
+            </div>
+            <div>
+              <input id="level5" name="level" type="radio" /><label for="level5">修行3年以上</lable>
+            </div>
+          </div>
+          <div>
+            <span>预计入学时间：</span><input class="text-length" name="joinTime" type="text" />
+          </div>
+          <div>
+            <span class="wish">修行立愿：</span><textarea name="wish" id="wish"></textarea>
+          </div>
+        </form>
+        <p id="err"></p>
+        <button type="button" class="btn btn-default btn-lg" id="comp">完成</button>
+        <button type="button" class="btn btn-default btn-lg" id="cancel">取消</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="http://cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script src="data/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/edit.js"></script>
+</html>

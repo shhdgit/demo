@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <title>列表页</title>
+  <meta charset="utf-8" />
+  <link href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/jst5.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 main">
+        <span class="title">已报名弟子</span>
+        <div class="glyphicon glyphicon-plus plus-ico" id="sign"></div>
+        <div class="table-wrap">
+          <table class="table table-hover content-margin">
+            <thead>
+              <tr>
+                <th>姓名</th>
+                <th>修真类型</th>
+                <th>报名时间</th>
+              </tr>
+            </thead>
+            <tbody id="content">
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebtn-wrap"><div id="pagebtn"></div></div>
+        <button type="button" class="btn btn-default btn-lg button" id="delbtn">删除</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="http://cdn.bootcss.com/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script src="data/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/index.js"></script>
+</html>

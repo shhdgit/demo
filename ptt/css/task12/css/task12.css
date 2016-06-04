@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Microsoft YaHei";
+  cursor: default;
+}
+body {
+  width: 100%;
+}
+@media (max-width: 650px) {
+  html {
+    font-size: 50%;
+  }
+}
+/*main*/
+.clear {
+  clear: both;
+}
+.wrap {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.wrap:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+@media (max-width: 1240px) {
+  .wrap {
+    margin: 0 1.6667%;
+    width: 96.6666%;
+  }
+}
+/*header*/
+.header {
+  background-color: #fff;
+}
+.header p {
+  display: inline-block;
+
+  padding: 11px 0;
+
+  color: #42b683;
+}
+.header-1 {
+  position: relative;
+}
+.header-1 .wrap div {
+  float: right;
+
+  margin-top: 7px;
+}
+.header-1 span {
+  display: inline-block;
+  width: 25px;
+  height: 24px;
+
+  margin-right: 12px; 
+
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -330px 0;
+  cursor: pointer;
+}
+#ico-qq {
+  background-position: -355px 0;
+}
+#ico-wb {
+  background-position: -380px 0;
+}
+.header-2 {
+  background-color: #29b078;
+  color: #FFF;
+  font-size: 1.6rem;
+}
+.logo {
+  float: left;
+
+  padding: 26px 56px;
+  margin-top: 25px;
+
+  background: url("../img/sprite.png") no-repeat -92px 0;
+}
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 7%;
+  }
+  .header-2 ul {
+    margin-right: 10%;
+  }
+}
+.header-2 ul {
+  float: right;
+
+  min-width: 200px;
+
+  list-style: none;
+}
+#header-index {
+  border-bottom-color: #fff;
+}
+.header-2 ul li {
+  display: inline-block;
+  padding: 36px 27px;
+  border-bottom: 5px solid #29b078;
+
+  cursor: pointer;
+}
+.header-2 ul li:hover {
+  border-bottom-color: #fff;
+  -webkit-transition: 0.1s linear;
+     -moz-transition: 0.1s linear;
+          transition: 0.1s linear;
+}
+@media (max-width: 650px) {
+  .header-2 ul li {
+    padding: 39px 4%;
+  }
+  .header-2 ul {
+    margin-right: 3%;
+  }
+}
+@media (max-width: 450px) {
+  .logo {
+    margin-left: 35%;
+  }
+  .header-2 ul li {
+    padding: 39px 4%;
+  }
+  .header-2 ul {
+    margin-right: 25%;
+  }
+}
+
+/*container*/
+.container {
+  padding-bottom: 238px;
+
+  background-color: #fafafa;
+}
+.container .wrap > p {
+  padding: 30px 0;
+
+  font-size: 1.6rem;
+  color: #000;
+  border-bottom: 1px solid #d0d6d9;
+}
+.container .wrap > p:after {
+  content: "职业";
+  color: #29b078;
+  cursor: pointer;
+}
+.container ul {
+  list-style-type: none;
+
+  color: #a1a1a1;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #edf1f2;
+}
+.container li {
+  display: inline-block;
+  margin-left: 32px;
+  margin: 30px 0 30px 32px;
+
+  color: #000;
+}
+.container li:hover {
+  background-color: #29b078;
+  color: #fff;
+  cursor: pointer;
+}
+/*cardgroup*/
+.card-group > h2 {
+  padding: 32px 0;
+
+  border-bottom: 1px solid #d0d6d9;
+}
+h2 {
+  font-size: 1.6rem;
+}
+.card-group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/*card*/
+.card-wrap {
+  position: relative;
+  float: left;
+
+  max-width: 382px;
+  min-width: 333px;
+  width: 31.8889%;
+  margin: 47px 0 30px 15px;
+}
+@media (max-width: 1100px) {
+  .card-wrap {
+    margin-left: 10%;
+  }
+}
+@media (max-width: 980px) {
+  .card-wrap {
+    margin-left: 25%;
+  }
+}
+@media (max-width: 650px) {
+  .card-wrap {
+    zoom: .8;
+    margin-left: 8%;
+  }
+}
+.card {
+  background-color: #fff;
+}
+.card > div {
+  position: relative;
+  border-bottom: 1px solid #edf1f2;
+}
+.card p,
+.card h3 {
+  display: inline-block;
+  padding-left: 3%;
+  line-height: 3rem;
+}
+/*card1*/
+.card-1 img {
+  margin: 5.2356% 0 4.1885% 2.8796%;
+  width: 36.3874%;
+}
+.card-1 h2,
+.card-1 p {
+  float: right;
+  padding: 2.6178% 0 0 0;
+  line-height: 1.5rem;
+
+  width: 56.8063%;
+}
+.card-1 h2 {
+  margin-top: 8.9005%;
+}
+.card-1:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/*card4*/
+.card-4:before,
+.card-5:before {
+  content: "";
+  position: absolute;
+  width: 36%;
+  height: 100%;
+  border-bottom: 1px solid #fff;
+}
+/*card7*/
+.card-7 p {
+  border-top: 1px solid #edf1f2;
+}
+
+/*back*/
+.back {
+  position: absolute;
+  top: 0;
+
+  height: 100%;
+  width: 100%;
+  -webkit-transform: rotateY(180deg);
+     -moz-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background-color: #000;
+}
+.card,
+.back {
+  border-radius: 2px;
+  box-shadow: 0 0 3px 2px #eeeded;
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.back h1 {
+  margin-top: 70px;
+
+  text-align: center;
+  color: #fff;
+}
+.back p {
+  font-size: 1.5rem;
+  margin: 60px 50px 0 70px;
+
+  color: #fff;
+}
+/*cardmodule*/
+.star {
+  font-size: 16px;
+  color: #ff5c00;
+}
+.red {
+  color: #f13123;
+}
+.stayright {
+  float: right;
+}
+.grey {
+  color: #999;
+}
+.halfblock {
+  width: 44%;
+}
+.leftbor {
+  border-left: 1px solid #edf1f2;
+}
+.three {
+  width: 33%;
+  border-right: 1px solid #edf1f2;
+  text-align: center;
+}
+/*rotate*/
+.card-wrap:hover .card {
+  -webkit-transform: rotateY(180deg);
+     -moz-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: transform 1s;
+     -moz-transition: transform 1s;
+          transition: transform 1s;
+}
+.card-wrap:hover .back {
+  -webkit-transform: rotateY(360deg);
+     -moz-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  -webkit-transition: transform 0.1s;
+     -moz-transition: transform 0.1s;
+          transition: transform 1s;
+}
+
+/*footer*/
+.footer-wrap {
+  background-color: #26a26f;
+}
+.footer-wrap p {
+  color: #fff;
+}
+.footer {
+  color: #fff;
+  font-size: 1.4rem;
+}
+.footer div {
+  float: left;
+  margin-top: 38px;
+  margin-right: 12.5%;
+}
+.footer p {
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+.footer span {
+  display: block;
+  margin-top: 30.2083%;
+}
+@media (max-width: 650px) {
+  .footer span {
+    margin-top: 20%;
+  }
+}
+.footer ul {
+  width: 245px;
+
+  list-style: none;
+}
+#weixinpt {
+  float: right;
+
+  margin-right: 2.8333%;
+  margin-bottom: 18px;
+  margin-right: 0;
+}
+@media (max-width: 750px) {
+  #weixinpt {
+    float: left;
+  }
+}
+#weixinpt div {
+  padding: 46px;
+  margin-top: 0;
+
+  background: url("../img/sprite.png") no-repeat;
+}
+.footer li {
+  display: inline-block;
+  margin: 18px 36px 0 0;
+
+  border-bottom: 1px solid #26a26f;
+  cursor: pointer;
+}
+.footer li:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.footer-wrap > p {
+  text-align: center;
+
+  line-height: 30px;
+
+  border-top: 1px solid #32c086;
+}
+@media (max-width: 470px) {
+  .footer-wrap > p span {
+    display: block;
+  }
+}

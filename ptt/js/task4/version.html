@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <title>桌游精灵</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="lib/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="css/version.css" />
+</head>
+<body>
+  <div class="container-fluid wrap">
+    <div class="row">
+      <header>
+        <div class="menuico">
+        </div>
+      </header>
+
+      <div class="mainbody">
+        <div class="center-block last-game"><p>上次游戏：</p></div>
+        <div class="center-block games">
+
+          <div class="gamepage">
+            <div class="title"><p>捉鬼游戏</p></div>
+            <div class="version">
+              <div class="version-block" id="zg1.0"><p>简化版</p></div>
+              <p>有1133个用户正在玩此款游戏</p>
+              <div class="version-block" id="zg2.0"><p>猜词版</p></div>
+              <p>有1133个用户正在玩此款游戏</p>
+              <div class="version-block" id="zg3.0"><p>杀人版</p></div>
+              <p>有1133个用户正在玩此款游戏</p>
+            </div>
+            <div class="nextbtn"></div>
+          </div>
+
+          <div class="gamepage first">
+            <div class="title"><p>杀人游戏</p></div>
+            <div class="version">
+              <div class="version-block" id="sr1.0"><p>简化版</p></div>
+              <p>有1133个用户正在玩此款游戏</p>
+              <div class="version-block" id="sr2.0"><p>警版</p></div>
+              <p>有1133个用户正在玩此款游戏</p>
+              <div class="version-block" id="sr3.0"><p>3.0</p></div>
+              <p>有1133个用户正在玩此款游戏</p>
+            </div>
+            <div class="prevbtn"></div>
+            <div class="nextbtn"></div>
+          </div>
+
+          <div class="gamepage">
+            <div class="title"><p>狼人杀</p></div>
+            <div class="game-content">
+            </div>
+            <div class="prevbtn"></div>
+            <div class="nextbtn"></div>
+          </div>
+
+          <div class="gamepage">
+            <div class="title"><p>炸狼堡</p></div>
+            <div class="game-content">
+            </div>
+            <div class="prevbtn"></div>
+          </div>
+
+        </div>
+
+        <div><img src="" alt=""></div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+<script src="lib/jquery-2.1.4.min.js"></script>
+<script src="js/custom.js"></script>
+<script>
+  $(function () {
+    // jump
+    var versionBlock = $(".version-block");
+    versionBlock.click(function () {
+      var version = $(this).attr("id");
+      localStorage.gameversion = "sr1.0";
+      window.location.href = "etc/paraset.html";
+    });
+    
+    // carousel
+    $(".nextbtn").click(function () {
+      var gamp = $(this).parent();
+      carousel(gamp, "right");
+    });
+    $(".prevbtn").click(function () {
+      var gamp = $(this).parent();
+      carousel(gamp, "left");
+    });
+
+  });
+</script>
+</html>

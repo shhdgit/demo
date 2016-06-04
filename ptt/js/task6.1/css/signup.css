@@ -1,0 +1,26 @@
+/*initial*/
+.text-length {
+  width: 70%;
+}
+/*content*/
+.sign-form > div {
+  margin-bottom: 1.5%;
+}
+.sign-form > div > span {
+  display: inline-block;
+  width: 15%;
+}
+.sign-radio > div {
+  display: inline-block;
+  margin-right: 3%;
+}
+.wish {
+  vertical-align: top;
+}
+.note {
+  display: inline-block;
+  width: 70%;
+}
+.panel-body {
+  cursor: text;
+}

@@ -1,0 +1,99 @@
+body {
+  font-family: "Microsoft YaHei";
+}
+@media (max-width: 500px) {
+  body{
+    background-color: #29bedf;
+  }
+}
+.wrap {
+  max-width: 400px;
+  width: 100%;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #29bedf;
+}
+@media (max-width: 500px) {
+  .wrap {
+    height: 450px;
+  }
+}
+/*header*/
+header {
+  border-bottom: 1px solid #74d4eb;
+
+  color: #fff;
+  text-align: center;
+}
+header p {
+  padding-top: 10px;
+
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  header{
+    display: none;
+  }
+}
+/*card*/
+
+/*back*/
+.card {
+  position: relative;
+}
+.cir {
+  display: block;
+  position: absolute;
+  left: 44%;
+  top: -25px;
+
+  width: 50px;
+  line-height: 44px;
+  border: 3px solid #ffedc5;
+
+  background-color: #fff;
+  border-radius: 100%;
+  text-align: center;
+  color: #d04760;
+  font-size: 2.5rem;
+}
+.back {
+  width: 80%;
+  height: 370px;
+  border: 3px solid #fff;
+  margin: 50px auto;
+  padding-top: 10rem;
+
+  background-color: #ffedc5;
+  text-align: center;
+  color: #d04760;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .back {
+    margin-bottom: 20px;
+  }
+}
+#content {
+  font-size: 5rem;
+}
+#content ~ p {
+  margin-top: 5rem;
+}
+/*font*/
+
+
+button {
+  display: block;
+  width: 85%;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto;
+
+  background-color: #fbb345;
+  color: #fff;
+  box-shadow: 0 0 1px #eee;
+  font-size: 2rem;
+}

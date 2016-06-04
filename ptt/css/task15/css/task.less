@@ -1,0 +1,398 @@
+body {
+  font-family: "Microsoft YaHei";
+}
+@media (max-width: 340px) {
+  body {
+    font-size: 62.5%;
+  }
+}
+p,
+ul {
+  margin: 0;
+}
+.bkgcolor {
+  background-color: #fafafa;
+}
+@media (min-width: 1200px) {
+  .wrap {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@sprite-path: "../img/sprite.png";
+/*header*/
+@p-green: #42b683;
+.contact p {
+  line-height: 3.5rem;
+
+  color: @p-green;
+}
+@media (max-width: 400px) {
+  .num {
+    padding-right: 0;
+  }
+}
+.icon span {
+  display: inline-block;
+  width: 25px;
+  height: 24px;
+  margin-top: 8px;
+  margin-right: 3px;
+
+  background: url(@sprite-path) no-repeat -252px 0;
+  cursor: pointer;
+}
+@media (min-width: 1200px) {
+  .icon span {
+    margin-right: 3%;
+  }
+}
+#ico-qq {
+  background-position: -277px 0;
+}
+/*nav*/
+nav {
+  background-color: #29b078;
+}
+.logo span {
+  display: inline-block;
+  width: 112px;
+  height: 53px;
+  margin-top: 10px;
+
+  background: url(@sprite-path) no-repeat -92px 0;
+}
+.nav ul {
+  margin-left: 20%;
+
+  list-style: none;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+}
+@media (min-width: 1200px) {
+  .nav ul {
+    margin-left: 0;
+  }
+}
+.nav ul li {
+  display: inline-block;
+  padding: 0 5%;
+  height: 70px;
+  padding-top: 25px;
+
+  border-bottom: 5px solid #29b078;
+  cursor: pointer;
+  transition: .2s ease;
+}
+@media (min-width: 750px) {
+  .nav ul li {
+    height: 100px;
+    padding-top: 40px;
+
+    font-size: 1.6rem;
+  }
+  .logo span {
+    margin-top: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  .nav ul li {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+@media (max-width: 400px) {
+  .nav ul li {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+.nav ul li:hover,
+#pos {
+  border-bottom-color: #fff;
+}
+/*main*/
+.main {
+  padding-left: 5%;
+
+  background-color: #fafafa;
+  font-size: 1.6rem;
+}
+.main-head {
+  display: none;
+}
+@media (min-width: 768px) {
+  .main-head {
+    display: block;
+  }
+}
+.main-head p {
+  display: none;
+  cursor: pointer;
+}
+.main-head p:after {
+  content: "职业";
+  color: @p-green;
+}
+.main-head ul {
+  font-size: 1.4rem;
+  border-bottom: 1px solid #edf1f2;
+}
+.main-head ul:before {
+  content: "方向：";
+  color: #a1a1a1;
+}
+.main-head ul li {
+  display: inline-block;
+  margin-left: 32px;
+  margin: 30px 0 30px 32px;
+
+  color: #000;
+  cursor: pointer;
+}
+.main-head ul > :first-child {
+  margin-left: 0;
+}
+.main-head ul li:hover {
+  background-color: #29b078;
+  color: #fff;
+}
+/*card*/
+.card-group > h2 {
+  padding: 20px 0 30px 0;
+
+  border-bottom: 1px solid #d0d6d9;
+}
+h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+.card-group p {
+  font-size: 1.2rem;
+}
+@media (min-width: 1366px) {
+  .main-head,
+  .card-group {
+    margin-left: -50px;
+  }
+}
+/*onecard*/
+.card-wrap {
+  position: relative;
+  float: left;
+
+  max-width: 382px;
+  min-width: 333px;
+  width: 31.8889%;
+  margin: 47px 0 30px 15px;
+}
+@media (max-width: 650px) {
+  .card-wrap {
+    zoom: .8;
+    margin-left: 0;
+  }
+}
+@media (min-width: 400px) {
+  .card-wrap {
+    margin-left: 20%;
+  }
+}
+@media (min-width: 768px) {
+  .card-wrap {
+    margin-left: 15px;
+  }
+}
+.card {
+  background-color: #fff;
+}
+.card > div {
+  position: relative;
+  border-bottom: 1px solid #edf1f2;
+}
+.card p,
+.card h3 {
+  display: inline-block;
+  padding-left: 3%;
+  line-height: 3rem;
+}
+.card h3 {
+  font-size: 1.4rem;
+  line-height: 1rem;
+}
+/*card1*/
+.card-1 img {
+  margin: 5.2356% 0 4.1885% 2.8796%;
+  width: 36.3874%;
+}
+.card-1 h2,
+.card-1 p {
+  float: right;
+  padding: 2.6178% 0 0 0;
+  line-height: 1.5rem;
+
+  width: 56.8063%;
+}
+.card-1 h2 {
+  margin-top: 8.9005%;
+}
+.card-1:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/*card4*/
+.card-4:before,
+.card-5:before {
+  content: "";
+  position: absolute;
+  width: 33%;
+  height: 100%;
+  margin-top: 1px;
+  border-bottom: 1px solid #fff;
+}
+/*card7*/
+.card-7 p {
+  border-top: 1px solid #edf1f2;
+}
+
+/*back*/
+.back {
+  position: absolute;
+  top: 0;
+
+  height: 100%;
+  width: 100%;
+  -webkit-transform: rotateY(180deg);
+     -moz-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background-color: #000;
+}
+.card,
+.back {
+  border-radius: 2px;
+  box-shadow: 0 0 3px 2px #eeeded;
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: transform 1s;
+     -moz-transition: transform 1s;
+          transition: transform 1s;
+}
+.back h1 {
+  margin-top: 70px;
+
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
+.back p {
+  font-size: 1.5rem;
+  margin: 60px 50px 0 70px;
+
+  color: #fff;
+}
+/*cardmodule*/
+.star {
+  font-size: 16px;
+  color: #ff5c00;
+}
+.red {
+  color: #f13123;
+}
+.stayright {
+  float: right;
+}
+.grey {
+  color: #999;
+}
+.halfblock {
+  width: 44%;
+}
+.leftbor {
+  border-left: 1px solid #edf1f2;
+}
+.three {
+  width: 33%;
+  border-right: 1px solid #edf1f2;
+  text-align: center;
+}
+/*rotate*/
+.card-wrap:hover .card {
+  -webkit-transform: rotateY(180deg);
+     -moz-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+.card-wrap:hover .back {
+  -webkit-transform: rotateY(360deg);
+     -moz-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+
+/*footer*/
+footer {
+  background-color: #26a26f;
+  color: #fff;
+}
+.footer {
+  margin-top: 38px;
+}
+.footer p {
+  font-size: 1.6rem;
+  line-height: 3rem;
+}
+.tree ul {
+  padding: 0;
+  margin-top: 10%;
+}
+.tree ul li {
+  display: inline-block;
+  padding-right: 5px;
+
+  cursor: pointer;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #26a26f;
+}
+.tree ul li:hover {
+  border-bottom-color: #fff;
+}
+#nobor {
+  border-right: 0;
+}
+/*webs*/
+.webs ul {
+  padding: 0;
+  margin-top: 10%;
+}
+.webs ul li {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 10px;
+
+  cursor: pointer;
+  border-bottom: 1px solid #26a26f;
+}
+.webs ul li:hover {
+  border-bottom-color: #fff;
+}
+/*wxpt*/
+#erweima {
+  display: block;
+  width: 92px;
+  height: 92px;
+  margin-bottom: 20px;
+
+  background: url(@sprite-path) no-repeat;
+}
+/*copyright*/
+.copyright {
+  border-top: 1px solid #32c086;
+
+  text-align: center;
+}
+.copyright span {
+  display: inline-block;
+}
+

@@ -1,0 +1,20 @@
+/*content*/
+.back {
+  font-size: 1rem;
+}
+.back:hover {
+  color: #777;
+}
+.data {
+  width: 100%;
+
+  line-height: 200%;
+}
+.data-left {
+  display: inline-block;
+  width: 13%;
+}
+.data-right {
+  display: inline-block;
+  width: 80%;
+}

@@ -1,0 +1,78 @@
+p {
+  margin-bottom: 0;
+}
+header {
+  border-bottom: 1px solid #74d4eb;
+}
+/*button*/
+.cusbtn {
+  width: 76.875%;
+  margin-top: 7.8125%;
+}
+/*content*/
+.content {
+  height: 85.515873%;
+}
+.content-notice {
+  position: relative;
+  height: 64.733179%;
+  border-bottom: 1px solid #74d4eb;
+
+  color: #fff;
+  font-size: 1.3815rem;
+  background: url("../img/cryman.png") no-repeat center 20.529801%;
+  background-size: 40%;
+}
+.playico {
+  float: right;
+  margin-top: 4.6875%;
+  margin-right: 8.28125%;
+  padding: 5.078125%;
+
+  background: url("../img/playico2.png") no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+
+.notice {
+  position: absolute;
+  top: 67.204301%;
+
+  width: 100%;
+  height: 32%;
+
+  text-align: center;
+  overflow-y: auto;
+}
+.content-wrap {
+  width: 65%;
+}
+.content-sequence {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-top: 8.173077%;
+  margin-bottom: 10.096154%;
+
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: #24a7c6;
+  text-align: center;
+}
+.content-sequence:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 36%;
+
+  width: 29%;
+  height: 106.666667%;
+
+  background: url("../img/nextstep.png") no-repeat;
+  background-size: 100%;
+}
+
+

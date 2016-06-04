@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <title>桌游精灵</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="lib/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/custom.css" />
+  <link rel="stylesheet" type="text/css" href="css/version.css" />
+</head>
+<body>
+  <div class="container-fluid wrap">
+    <div class="row back">
+      <header>
+      </header>
+      <div class="back-mainbody">
+        <div class="sider">
+          <div class="notice left"></div>
+          <div class="gotoico"></div>
+          <p>公告</p>
+        </div>
+        <div class="sider">
+          <div class="setting left"></div>
+          <div class="gotoico"></div>
+          <p>设置</p>
+        </div>
+        <div class="sider">
+          <div class="help left"></div>
+          <div class="gotoico"></div>
+          <p>帮助</p>
+        </div>
+        <div class="sider">
+          <div class="about left"></div>
+          <div class="gotoico"></div>
+          <p>关于</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row font">
+      <header>
+        <div class="menuico" id="menu">
+        </div>
+      </header>
+
+      <div class="mainbody">
+        <div class="center-block last-game"><p>上次游戏：<span>杀人游戏</span></p></div>
+        <div class="center-block games">
+
+          <div class="gamepage">
+            <div class="title"><p>捉鬼游戏</p></div>
+            <div class="version">
+              <div class="version-block" id="zg1.0"><p>简化版</p></div>
+              <p>有1133个用户正在玩此款游戏</p>
+              <div class="version-block" id="zg2.0"><p>猜词版</p></div>
+              <p>有1133个用户正在玩此款游戏</p>
+              <div class="version-block" id="zg3.0"><p>杀人版</p></div>
+              <p>有1133个用户正在玩此款游戏</p>
+            </div>
+            <div class="nextbtn"></div>
+          </div>
+
+          <div class="gamepage first">
+            <div class="title"><p>杀人游戏</p></div>
+            <div class="version">
+              <div class="version-block" id="sr1.0"><p>简化版</p></div>
+              <p>有1133个用户正在玩此款游戏</p>
+              <div class="version-block" id="sr2.0"><p>警版</p></div>
+              <p>有1133个用户正在玩此款游戏</p>
+              <div class="version-block" id="sr3.0"><p>3.0</p></div>
+              <p>有1133个用户正在玩此款游戏</p>
+            </div>
+            <div class="prevbtn"></div>
+            <div class="nextbtn"></div>
+          </div>
+
+          <div class="gamepage">
+            <div class="title"><p>狼人杀</p></div>
+            <div class="game-content">
+            </div>
+            <div class="prevbtn"></div>
+            <div class="nextbtn"></div>
+          </div>
+
+          <div class="gamepage">
+            <div class="title"><p>炸狼堡</p></div>
+            <div class="game-content">
+            </div>
+            <div class="prevbtn"></div>
+          </div>
+
+        </div>
+
+        <div><img src="" alt=""></div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+<script src="lib/jquery-2.1.4.min.js"></script>
+<script>
+  $("#menu").click(function () {
+    $(".font").toggleClass("font-move");
+    $(".back").toggleClass("back-move");
+    return false;
+  });
+  $(".font").click(function () {
+    $(".font").removeClass("font-move");
+    $(".back").removeClass("back-move");
+  });
+</script>
+</html>

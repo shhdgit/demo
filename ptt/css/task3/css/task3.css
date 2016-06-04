@@ -1,0 +1,141 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Microsoft Yahei',sans-serif;
+	height: 100%;
+}
+p,a {
+	color: #fff;
+}
+p {
+	cursor: default;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	width: 100%;
+	max-width: 640px;
+
+	margin: 0 auto;
+
+	background-color: #68CDD5;
+}
+/*header*/
+.header {
+	position: relative;
+
+	background-color: #22292C;
+}
+.ico_back {
+	display: inline-block;
+	width: 3.125%;
+	max-width: 20px;
+
+	position: absolute;
+	top: 33%;
+	left: 3%;
+}
+.ico_back img {
+	width: 100%;
+}
+.header a {
+	font-size: 2.6rem;
+
+	position: absolute;
+	top: 30%;
+	left: 8%;
+}
+.header p {
+	display: inline-block;
+	width: 100%;
+	font-size: 400%;
+	margin: 15px 0;
+
+	text-align: center;
+}
+.ico_more {
+	width: 5.78125%;
+	max-width: 37px;
+
+	position: absolute;
+	top: 40%;
+	right: 3%;
+}
+.ico_more img {
+	width: 100%;
+}
+/*main*/
+.main {
+	height: 768px;
+
+	position: relative;
+}
+.ico_back2 {
+	position: absolute;
+	top: 3%;
+	left: 5%;
+}
+.pptlogo {
+	display: block;
+
+	position: relative;
+	top: 15%;
+	margin: 0 auto;
+}
+.content {
+	font-size: 3rem;
+
+	position: relative;
+	margin: 0 7rem;
+	top: 25%;
+}
+.ico {
+	position: relative;
+	top: 40%;
+}
+.ico p {
+	font-size: 2.4rem;
+}
+.ico div {
+	display: inline-block;
+
+	text-align: center;
+}
+.group {
+	position: relative;
+	left: 20%;
+}
+.grape {
+	position: relative;
+	left: 35%;
+}
+
+@media screen and (max-width: 580px){
+	html {
+		font-size: 42.5%;
+	}
+	.main{
+		height: 580px;
+	}
+	.ico_back2 {
+		width: 40px;
+	}
+	.pptlogo {
+		width: 120px;
+	}
+	.grape img,.group img {
+		width:50px;
+	}
+	.content {
+		top: 18%;
+	}
+	.ico {
+		top: 28%;
+	}
+}
