@@ -6,7 +6,7 @@ window.onload = function () {
     var domsLen = doms.length
     if (domsLen) {
       for (i = 0; i < domsLen; i++) {
-        doms[i].style.backgroundColor = '#ffff00'
+        doms[i].style.backgroundColor = '#eee'  // 底色，自己改
       }
     }
     
