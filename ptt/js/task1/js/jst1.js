@@ -13,7 +13,7 @@ window.onload = function () {
     // 获取随机dom改变颜色，更新doms
     for (j = 0; j < 3; j++) {
       doms[j] = blocks[getRandom(blocks.length)]
-      doms[j].style.backgroundColor = '#' + (Math.random() * 0xffffff << 0)
+      doms[j].style.backgroundColor = '#' + (Math.random() * 0xffffff << 0).toString(16)
     }
     
     // 递归                                |-> 传递了本次保存的doms，对于下一次调用来说一开始的doms就是before
