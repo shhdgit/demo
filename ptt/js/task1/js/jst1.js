@@ -1,34 +1,29 @@
 window.onload = function () {
-  var timer = setInterval(function () {
-    changeColor();
-  },1000);
-
-  var wrap = document.getElementById("wrap").children;
-  var i = 0;
-  var before = 0;
-  function changeColor () {
-    var rand = Math.ceil(Math.random() * 3);
-    var color = "";
-    var name = "";
-    i = i % 9;
-    wrap[before].style.backgroundColor = "#eee";
-    switch (rand) {
-      case 1:
-        color = "#cb4042";
-        name = "红色";
-        break;
-      case 2:
-        color = "#ffc408";
-        name = "黄色";
-        break;
-      case 3:
-        color = "#3a8fb7";
-        name = "蓝色";
-        break;
+  var blocks = document.getElementById('wrap').children
+  function changeColor (doms) {
+    // 还原颜色
+    var i, j
+    var domsLen = doms.length
+    if (domsLen) {
+      for (i = 0; i < domsLen; i++) {
+        doms[i].style.backgroundColor = '#ffff00'
+      }
     }
-    wrap[i].style.backgroundColor = color;
-    console.log("格子" + (i + 1) + "变成了" + name);
-    before = i;
-    i++;
+    
+    // 获取3个随机dom元素，更新doms
+    for (j = 0; j < 3; j++) {
+      doms[j] = blocks[getRandom(blocks.length)]
+      doms[j].style.backgroundColor = '#' + (Math.random() * 0xffffff << 0)
+    }
+    
+    setTimeout(function () { changeColor(doms) }, 1000)
   }
+  function getRandom (base) {
+    var random = Math.random
+    // 防止random等于1（说过为什么了）
+    if (random === 1) random = .9
+    return Math.floor(Math.random() * base)
+  }
+  
+  setTimeout(function () { changeColor([]) }, 1000)
 }
